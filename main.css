@@ -12,7 +12,13 @@
 .grid{
     background-color:beige;
     border: 1px solid black;
-    height: 0;
-    width: 20%;
-    padding-bottom: 20%;
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.grid:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
 }

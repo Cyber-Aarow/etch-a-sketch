@@ -9,3 +9,11 @@ for(let i = 0; i < 16; i++){
     }
     container.appendChild(new_div);
 }
+
+let grid = document.querySelectorAll('.grid');
+
+for(let i = 0; i < grid.length; i++){
+    grid[i].addEventListener('mouseover', (e) =>{
+        grid[i].style.backgroundColor = 'black';
+    });
+}

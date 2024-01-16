@@ -7,7 +7,7 @@ function deleteGrid(){
 }
 
 function createGrid(gridSize){
- //   if(gridSize >= 1 && gridSized <= 100){
+    if(gridSize >= 1 && gridSize <= 100){
         deleteGrid();
         for(let i = 0; i < gridSize; i++){
             let new_div = document.createElement('div');
@@ -26,8 +26,8 @@ function createGrid(gridSize){
                 grid[i].style.backgroundColor = 'black';
             });
         }
-//    }
-  //  else alert("Not a valid size!");
+    }
+    else alert("Not a valid size!");
 }
 
 let sizeSelector = document.querySelector('#sizeSelector');

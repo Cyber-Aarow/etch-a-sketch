@@ -11,7 +11,7 @@ function createGrid(gridSize){
     for(let i = 0; i < gridSize; i++){
         let new_div = document.createElement('div');
         new_div.className = 'row';
-        for(let j = 0; j < size; j++){
+        for(let j = 0; j < gridSize; j++){
             let new_new_div = document.createElement('div');
             new_new_div.className = 'grid column';
             new_div.appendChild(new_new_div);
